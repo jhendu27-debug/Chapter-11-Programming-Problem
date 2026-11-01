@@ -7,3 +7,7 @@ I created the NeuralMod class with a name, processing speed, and compatibility r
 # Phase 2 
 
 I implemented the Comparable interface to sort the mods by processing speed. Natural order means the default way objects are sorted. I used compareTo to compare the speeds from lowest to highest.
+
+# Phase 3 
+
+I used Comparator to create a separate sorting method based on compatibility. Comparator is useful when you want to sort objects in different ways. I reversed the comparison so the highest compatibility rating appears first.
