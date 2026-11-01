@@ -13,13 +13,17 @@ public class Main {
         registry.add(new NeuralMod("Soma-Link", 3.1, 98));
         registry.add(new NeuralMod("Pulse-7", 5.8, 60));
 
-        // Additional test mods
+        // Test mods with matching speed and compatibility
         registry.add(new NeuralMod("Alpha-Mod", 4.2, 85));
         registry.add(new NeuralMod("Beta-Mod", 4.2, 85));
 
+        // Test mods with matching speed but different compatibility
+        registry.add(new NeuralMod("Gamma-Mod", 3.1, 90));
+        registry.add(new NeuralMod("Delta-Mod", 3.1, 95));
+
         Collections.sort(registry);
 
-        System.out.println("Optimal Neural Mod Registry:");
+        System.out.println("Final Neural Mod Registry:");
 
         for (NeuralMod mod : registry) {
             System.out.println(mod);

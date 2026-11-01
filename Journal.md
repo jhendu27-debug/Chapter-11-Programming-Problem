@@ -15,3 +15,7 @@ I used Comparator to create a separate sorting method based on compatibility. Co
 # Phase 4 
 
 I updated compareTo to use three sorting rules. The program first compares speed, then compatibility if the speeds match, and finally the names alphabetically if both values match. This makes the registry more organized.
+
+# Phase 5 
+
+I tested the program with different mods that had matching speeds and compatibility ratings. The sorting worked correctly and organized the mods using all three rules. I did not find any major problems during testing.
