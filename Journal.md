@@ -11,3 +11,7 @@ I implemented the Comparable interface to sort the mods by processing speed. Nat
 # Phase 3 
 
 I used Comparator to create a separate sorting method based on compatibility. Comparator is useful when you want to sort objects in different ways. I reversed the comparison so the highest compatibility rating appears first.
+
+# Phase 4 
+
+I updated compareTo to use three sorting rules. The program first compares speed, then compatibility if the speeds match, and finally the names alphabetically if both values match. This makes the registry more organized.

@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class Main {
 
@@ -14,15 +13,13 @@ public class Main {
         registry.add(new NeuralMod("Soma-Link", 3.1, 98));
         registry.add(new NeuralMod("Pulse-7", 5.8, 60));
 
-        Comparator<NeuralMod> compatibilitySort =
-                (mod1, mod2) -> Integer.compare(
-                        mod2.getCompatibilityRating(),
-                        mod1.getCompatibilityRating()
-                );
+        // Additional test mods
+        registry.add(new NeuralMod("Alpha-Mod", 4.2, 85));
+        registry.add(new NeuralMod("Beta-Mod", 4.2, 85));
 
-        registry.sort(compatibilitySort);
+        Collections.sort(registry);
 
-        System.out.println("Mods Sorted by Compatibility:");
+        System.out.println("Optimal Neural Mod Registry:");
 
         for (NeuralMod mod : registry) {
             System.out.println(mod);
