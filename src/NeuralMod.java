@@ -1,4 +1,4 @@
-public class NeuralMod {
+public class NeuralMod implements Comparable<NeuralMod> {
 
     private String name;
     private double processingSpeed;
@@ -20,6 +20,11 @@ public class NeuralMod {
 
     public int getCompatibilityRating() {
         return compatibilityRating;
+    }
+
+    @Override
+    public int compareTo(NeuralMod other) {
+        return Double.compare(this.processingSpeed, other.processingSpeed);
     }
 
     @Override

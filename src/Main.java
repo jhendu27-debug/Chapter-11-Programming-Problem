@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
@@ -12,7 +13,9 @@ public class Main {
         registry.add(new NeuralMod("Soma-Link", 3.1, 98));
         registry.add(new NeuralMod("Pulse-7", 5.8, 60));
 
-        System.out.println("Neural Mod Registry:");
+        Collections.sort(registry);
+
+        System.out.println("Mods Sorted by Processing Speed:");
 
         for (NeuralMod mod : registry) {
             System.out.println(mod);
